@@ -1,0 +1,133 @@
+---
+description: This project is a static presentation deck for a basic financial education workshop, built with HTML, CSS, and JavaScript using Reveal.js as the slide framework. Content is primarily written in Markdown with optional inline HTML for special layouts or interactive elements, and styling is centralized in CSS. JavaScript modules handle all animations, charts, and interactions, with optional datasets. The site is hosted on GitHub Pages and must remain modular, consistent in style, and easy to update through AI-assisted development in Cursor. All changes must respect the folder structure, keep content, style, and logic separated, and ensure the deck opens without errors, with working navigation and functional interactions.
+globs:
+alwaysApply: true
+---
+
+# Cursor Rule: General Methods and Objective
+
+## Purpose
+This document serves as the **primary reference** for Cursor/AI and any collaborators working on the Finance Workshop presentation.  
+It defines the project’s **goals**, **technical stack**, **folder structure**, and **development guidelines**.  
+
+> **Note:** The actual educational content of the workshop is stored in `resources/content_draft_vXY.md` (please refer to the last available version `vXY`) and is **not** included here.
+
+---
+
+## 1. Project Goals
+
+- Build a **static website** (HTML presentation) for a basic financial education workshop.
+- Structure the presentation as **slides** with text, images, and optional animations or interactive charts.
+- Ensure the presentation is **projectable in person** and accessible in modern browsers without installation.
+- Host the site on **GitHub Pages** for public distribution.
+
+**Key Characteristics**
+- Smooth navigation between slides.
+- Clear, consistent visual style.
+- Ability to integrate light interactivity (charts, diagrams).
+- Modular, easily editable structure.
+
+---
+
+## 2. Technology Stack
+
+- **Base:** HTML + CSS + Vanilla JavaScript.
+- **Slide framework:** Reveal.js.
+- **Charts:** Plotly (or similar).
+- **Content format:** Hybrid approach:
+  - Markdown for most slides.
+  - Inline HTML for special slides requiring custom layouts or interactive elements.
+- **Hosting:** GitHub Pages (no backend).
+
+---
+
+## 3. Folder Structure
+
+The following folder structure can be used as guideline (not a strict guideline, but recommended):
+
+```
+
+/ (project root)
+│
+├─ index.html                  ← Main deck entry point
+│
+├─ assets/
+│  ├─ styles/                  ← Global CSS and theme files
+│  ├─ images/                  ← Graphic resources
+│  └─ data/                    ← CSV/JSON files for charts or examples
+│
+├─ js/
+│  ├─ config.js                ← Configuration (list of slide files, base options)
+│  ├─ loader.js                ← Loads slide sections from files
+│  ├─ deck.js                  ← Reveal.js initialization and basic hooks
+│  └─ components/              ← Modular JS for animations, charts, interactions
+│
+├─ slides/
+│  ├─ intro.md                 ← Introduction
+│  ├─ block1.md                ← First thematic block
+│  ├─ block2.md                ← Second thematic block
+│  ├─ block3.md                ← Third thematic block
+│  └─ qna.md                   ← Q\&A / resources
+│
+└─ rules/
+├─ README.md                ← Purpose of the rules
+├─ content-guidelines.md    ← Guidelines for creating/modifying slides
+├─ code-guidelines.md       ← Basic JS/CSS principles
+└─ agent-guardrails.md      ← What to avoid, priorities, definition of done
+
+```
+
+---
+
+## 4. Authoring Guidelines
+
+- **Content separation:**
+  - Use Markdown for text, bullet points, and simple slides.
+  - Use inline HTML only when special layouts or interactive elements are needed.
+- **Logic separation:**
+  - Interaction logic lives in JS modules inside `components/`.
+  - External datasets are stored in `assets/data/` and loaded dynamically.
+- **Styling:**
+  - Centralize colors, fonts, and spacing in `theme.css`.
+  - Maintain a consistent visual look across all slides.
+
+---
+
+## 5. Cursor/AI Development Rules
+
+**AI Objectives**
+- Respect the defined folder structure.
+- Localize changes to relevant files only.
+- Keep a clear separation between content, style, and logic.
+
+**Avoid**
+- Heavy inline JavaScript in slides.
+- Adding unnecessary libraries.
+
+**Definition of Done**
+- The deck opens locally without console errors.
+- Slides navigate correctly.
+- Interactive elements initialize when the slide becomes visible and work as intended.
+
+---
+
+## 6. Development Process
+
+1. Set up the base folder structure and empty files.
+2. Populate `.md` files with initial text slides.
+3. Gradually integrate special HTML elements and link them to their respective JS modules.
+4. Define the CSS theme and ensure visual consistency.
+5. Test locally, then deploy to GitHub Pages.
+
+---
+
+## 7. Deployment
+
+- **Method:** Direct publishing to GitHub Pages from the main branch.
+- **Local test:** Run a static server (e.g., `python -m http.server`) and verify everything before pushing.
+
+---
+
+## Final Summary
+A Reveal.js-based deck, organized in Markdown blocks with optional inline HTML for special slides, centralized styling in CSS, modular JS logic, hosted on GitHub Pages, designed for easy extension and editing through Cursor/AI-assisted development.
+```
