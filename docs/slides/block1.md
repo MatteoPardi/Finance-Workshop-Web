@@ -33,7 +33,6 @@ Dopo aver impostato la strategia, serve **~10 minuti al mese**.
 **Ordine di grandezza realistico:**
 
 ### ~5% netto annuo
-*(4–5% annuo considerando inflazione e tasse)*
 
 ---
 

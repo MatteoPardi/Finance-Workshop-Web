@@ -10,7 +10,7 @@ Un percorso per acquisire autonomia nella gestione finanziaria
 
 ## L'obiettivo del workshop
 
-Dare **conoscenze di base** e un **overview** del percorso di educazione finanziaria per raggiungere l'**autonomia nell'apprendimento successivo**.
+Dare **conoscenze di base** e una **overview** del percorso di educazione finanziaria per raggiungere l'**autonomia nell'apprendimento successivo**.
 
 <div class="fragment">
 
