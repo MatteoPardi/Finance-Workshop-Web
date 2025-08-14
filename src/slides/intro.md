@@ -1,22 +1,33 @@
 # Workshop Introduzione alla Finanza
 
-## Un viaggio nel mondo degli investimenti e della pianificazione finanziaria
+## Conoscenze fondamentali per la finanza personale e gli investimenti passivi
 
 <div class="subtitle">
-Impara i fondamenti per prendere decisioni finanziarie consapevoli
+Un percorso per acquisire autonomia nella gestione finanziaria
 </div>
 
 ---
 
-## Benvenuti!
+## L'obiettivo del workshop
 
-Oggi esploreremo insieme:
-
-- **Concetti base** della finanza personale
-- **Strumenti di investimento** essenziali  
-- **Strategie** per la pianificazione finanziaria
-- **Esempi pratici** e casi di studio
+Dare **conoscenze di base** e un **overview** del percorso di educazione finanziaria per raggiungere l'**autonomia nell'apprendimento successivo**.
 
 <div class="fragment">
-🎯 **Obiettivo**: Fornire le basi per iniziare il tuo percorso finanziario
+
+### 🎯 Cosa otterrai
+
+- Comprensione dei **fondamenti** degli investimenti
+- **Strumenti pratici** per iniziare
+- **Roadmap** per proseguire il tuo percorso formativo
+
+</div>
+
+<div class="fragment">
+
+### 📚 Strumenti consigliati per approfondire
+
+- Corso *"Educati e finanziati"* di **Paolo Coletti** (gratuito su YouTube)
+- Playlist *"From Zero to Hero"* di **Mr. Rip**
+- Altri contenuti su ETF e finanza personale
+
 </div>

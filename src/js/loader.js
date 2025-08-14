@@ -14,6 +14,9 @@ class SlideLoader {
         try {
             console.log('Loading slides...');
             
+            // Clear any existing static slides before loading dynamic ones
+            this.clearStaticSlides();
+            
             for (const slideFile of window.SLIDE_FILES) {
                 await this.loadSlideFile(slideFile);
             }
@@ -26,6 +29,17 @@ class SlideLoader {
             this.showErrorSlide(error);
             return [];
         }
+    }
+
+    /**
+     * Clear static slides to avoid duplication with dynamic ones
+     */
+    clearStaticSlides() {
+        console.log('Clearing static fallback slides...');
+        
+        // Remove all existing sections to avoid duplication
+        // The dynamic slides will be added by processMarkdownContent
+        this.container.innerHTML = '';
     }
 
     /**
@@ -120,11 +134,14 @@ class SlideLoader {
      */
     showErrorSlide(error) {
         this.container.innerHTML = `
-            <section>
-                <h2>Errore di Caricamento Slides</h2>
+            <section class="error-slide">
+                <h2>⚠️ Errore di Caricamento</h2>
                 <p>Si è verificato un errore durante il caricamento delle slide:</p>
-                <code>${error.message}</code>
-                <p><small>Controllare la console per maggiori dettagli.</small></p>
+                <div style="background: #f8f8f8; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                    <code style="color: #d63384;">${error.message}</code>
+                </div>
+                <p><small>💡 Verificare la connessione di rete e ricaricare la pagina.</small></p>
+                <p><small>🔧 Controllare la console del browser per dettagli tecnici.</small></p>
             </section>
         `;
     }

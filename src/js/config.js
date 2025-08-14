@@ -35,17 +35,24 @@ const REVEAL_CONFIG = {
     // Transition style for full page slide backgrounds
     backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
     
-    // The "normal" size of the presentation, aspect ratio will be preserved
-    // when the presentation is scaled to fit different resolutions
-    width: 1024,
-    height: 768,
+    // 16:9 aspect ratio - modern standard for projectors and displays
+    // Full HD resolution for optimal compatibility
+    width: 1920,
+    height: 1080,
     
-    // Factor of the display size that should remain empty around the content
-    margin: 0.1,
+    // Balanced margin for good presentation aesthetics
+    margin: 0.05,
     
-    // Bounds for smallest/largest possible scale to apply to content
-    minScale: 0.2,
-    maxScale: 1.5,
+    // Optimized scaling bounds for 16:9 format
+    minScale: 0.3,
+    maxScale: 2.0,
+    
+    // Enable responsive slide sizing
+    embedded: false,
+    
+    // Automatically animate matching elements
+    autoAnimateEasing: 'ease',
+    autoAnimateDuration: 0.3,
     
     // Enable plugins
     plugins: [

@@ -1,47 +1,58 @@
-## Fondamenti della Finanza Personale
+## Due domande che vi state già facendo
 
-### Perché è importante?
-
-- **Sicurezza economica** a lungo termine
-- **Libertà** di scelta nelle decisioni di vita
-- **Protezione** contro imprevisti e inflazione
-- **Crescita** del patrimonio nel tempo
+Prima di iniziare, rispondiamo alle **due domande più comuni** che tutti si fanno quando sentono parlare di investimenti.
 
 ---
 
-## I Tre Pilastri
+## 1. ⏰ Quanto tempo richiede?
+
+**Risposta: pochissimo!** 
+
+Dopo aver impostato la strategia, serve **~10 minuti al mese**.
 
 <div class="fragment">
 
-### 1. 💰 Budgeting
-Gestire entrate e uscite in modo consapevole
+### Cosa NON dovrete fare ❌
+- Guardare giornali economici
+- Seguire notizie di borsa quotidiane  
+- Fare previsioni di mercato
 
 </div>
 
 <div class="fragment">
 
-### 2. 💡 Saving  
-Accantonare risorse per obiettivi futuri
-
-</div>
-
-<div class="fragment">
-
-### 3. 📈 Investing
-Far crescere il denaro attraverso investimenti mirati
+### Cosa farete ✅
+**Attività mensile:** Aprire l'app del broker → Investire la somma pianificata → Eventuale ribilanciamento
 
 </div>
 
 ---
 
-## Regola del 50/30/20
+## 2. 💰 Quanto posso guadagnare?
 
-Una semplice formula per iniziare:
+**Ordine di grandezza realistico:**
 
-- **50%** - Spese essenziali (casa, cibo, trasporti)
-- **30%** - Spese discrezionali (intrattenimento, hobby)  
-- **20%** - Risparmio e investimenti
+### ~5% netto annuo
+*(4–5% annuo considerando inflazione e tasse)*
 
-<div class="small-text">
-*Questa è una guida di base - adatta le percentuali alla tua situazione*
+---
+
+## È tanto o poco il 5% annuo?
+
+<div class="fragment">
+
+### 📈 Da un lato è **tanto**
+L'**effetto dell'interesse composto** → raddoppio ogni ~15 anni
+
+*Mostrare grafico crescita esponenziale*
+
+</div>
+
+<div class="fragment">
+
+### 📉 Dall'altro è **poco**  
+L'impatto degli investimenti è **inferiore** a quello di quanto guadagni e quanto spendi
+
+**Esempio:** 10.000 € investiti, 500 € all'anno → il rendimento non compensa cattiva gestione delle entrate/uscite
+
 </div>

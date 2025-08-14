@@ -72,6 +72,9 @@ class FinanceDeck {
         
         // Update slide-specific styling
         this.updateSlideClasses(event.currentSlide);
+        
+        // Check and handle content overflow
+        this.handleContentOverflow(event.currentSlide);
     }
 
     /**
@@ -82,6 +85,9 @@ class FinanceDeck {
         
         // Initialize components for the first slide
         this.initializeSlideComponents(event.currentSlide);
+        
+        // Make sure the first slide has the correct styling
+        this.updateSlideClasses(event.currentSlide);
         
         // Add any global event listeners
         this.setupGlobalListeners();
@@ -222,13 +228,55 @@ class FinanceDeck {
         // Add current slide class
         document.body.classList.add(`slide-${this.currentSlide}`);
         
-        // Add slide type classes based on content
+        // Remove existing slide type classes
+        slide.classList.remove('intro-slide', 'title-slide', 'content-slide');
+        
+        // Add slide type classes based on content and position
         if (slide.querySelector('h1')) {
-            slide.classList.add('title-slide');
+            // Check if this is the first slide (intro slide)
+            if (this.currentSlide === 0) {
+                slide.classList.add('intro-slide');
+            } else {
+                slide.classList.add('title-slide');
+            }
         } else {
             slide.classList.add('content-slide');
         }
     }
+
+    /**
+     * Handle content overflow with elegant solutions
+     */
+    handleContentOverflow(slide) {
+        if (!slide) return;
+
+        // Reset overflow classes
+        slide.classList.remove('content-overflow', 'content-overflow-small', 'has-overflow');
+
+        // Wait for next frame to ensure DOM is rendered
+        requestAnimationFrame(() => {
+            const slideHeight = slide.offsetHeight;
+            const viewportHeight = window.innerHeight;
+            const contentHeight = slide.scrollHeight;
+
+            // Check if content overflows
+            if (contentHeight > slideHeight * 0.95) {
+                console.log('Content overflow detected');
+                
+                // Try different scaling levels
+                if (contentHeight > slideHeight * 1.2) {
+                    slide.classList.add('content-overflow-small');
+                } else {
+                    slide.classList.add('content-overflow');
+                }
+                
+                // Add overflow indicator
+                slide.classList.add('has-overflow');
+            }
+        });
+    }
+
+
 
     /**
      * Set up global event listeners
