@@ -1,0 +1,23 @@
+# GitHub Pages Configuration
+# Disable Jekyll processing
+plugins: []
+markdown: kramdown
+highlighter: rouge
+
+# Site settings
+title: "Workshop Introduzione alla Finanza"
+description: "Presentazione interattiva per workshop di educazione finanziaria"
+
+# Build settings
+theme: null
+remote_theme: null
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE
+  - resources/
+
+# Include files that start with underscores
+include:
+  - .nojekyll
