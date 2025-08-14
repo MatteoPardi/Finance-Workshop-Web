@@ -1,5 +1,9 @@
 # 💰 Workshop - Introduzione all'Educazione Finanziaria
 
+> ## 🚧 **WORK IN PROGRESS** 🚧
+> ### ⚠️ Sito in fase di sviluppo ⚠️
+> *La presentazione web è attualmente in costruzione. I contenuti e le funzionalità potrebbano subire modifiche.*
+
 Benvenuti nel materiale didattico del workshop **"Introduzione all'Educazione Finanziaria"**! 
 
 ## 📖 Panoramica
