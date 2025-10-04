@@ -3,7 +3,9 @@
 // List of slide files to load in order
 const SLIDE_FILES = [
     'slides/intro.md',
-    'slides/block1.md'
+    'slides/block1.md',
+    'slides/block2.md',
+    'slides/block3.md'
 ];
 
 // Reveal.js configuration
