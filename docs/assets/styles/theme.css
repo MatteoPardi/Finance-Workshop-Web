@@ -393,6 +393,549 @@
     to { transform: translateX(0); }
 }
 
+/* Visual components used across slides */
+.visual {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.visual svg {
+    max-width: min(100%, 780px);
+    height: auto;
+}
+
+.mini-chart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 18px;
+    width: 100%;
+    max-width: 780px;
+}
+
+.mini-chart-grid figure {
+    background: var(--light-gray);
+    border-radius: 12px;
+    padding: 18px 18px 12px;
+    box-shadow: 0 8px 14px rgba(44, 62, 80, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.mini-chart-grid figcaption {
+    font-size: 0.7em;
+    color: var(--dark-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.timeline-graphic text {
+    font-size: 28px;
+    fill: var(--dark-gray);
+    font-family: var(--main-font);
+}
+
+.timeline-graphic .label-strong {
+    fill: var(--secondary-color);
+    font-weight: 600;
+}
+
+.decision-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    max-width: 780px;
+}
+
+.decision-branches {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.decision-node {
+    background: var(--light-gray);
+    border-radius: 14px;
+    padding: 18px 26px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(52, 152, 219, 0.16);
+    max-width: 280px;
+}
+
+.decision-node.main {
+    border: 3px solid rgba(52, 152, 219, 0.6);
+    font-weight: 600;
+}
+
+.decision-node.positive {
+    border: 3px solid var(--success-color);
+}
+
+.decision-node.negative {
+    border: 3px solid var(--accent-color);
+}
+
+.decision-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.decision-arrow .arrow-line {
+    width: 4px;
+    height: 60px;
+    background: linear-gradient(var(--secondary-color), var(--accent-color));
+    border-radius: 2px;
+}
+
+.histogram-visual {
+    max-width: 760px;
+    width: 100%;
+    background: var(--light-gray);
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 12px 24px rgba(44, 62, 80, 0.18);
+}
+
+.quadrant-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 14px;
+    max-width: 780px;
+    width: 100%;
+}
+
+.quadrant-grid .quadrant {
+    border-radius: 16px;
+    padding: 20px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    color: var(--primary-color);
+    background: linear-gradient(145deg, rgba(52, 152, 219, 0.12), rgba(46, 204, 113, 0.12));
+    box-shadow: inset 0 0 0 2px rgba(52, 152, 219, 0.25);
+}
+
+.quadrant-grid .quadrant strong {
+    color: var(--secondary-color);
+}
+
+.market-stands {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 780px;
+}
+
+.market-stand {
+    background: linear-gradient(160deg, rgba(52, 152, 219, 0.2), rgba(41, 128, 185, 0.05));
+    border-radius: 18px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 12px 22px rgba(44, 62, 80, 0.18);
+}
+
+.market-stand .stand-label {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+}
+
+.market-stand .stand-screen {
+    width: 100%;
+    height: 70px;
+    border-radius: 12px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.market-connector {
+    width: 100%;
+    max-width: 780px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.bid-ask-diagram {
+    max-width: 760px;
+    width: 100%;
+}
+
+.orderbook-table {
+    width: 100%;
+    max-width: 620px;
+    border-collapse: collapse;
+    font-size: 0.85em;
+    background: var(--light-gray);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(44, 62, 80, 0.18);
+}
+
+.orderbook-table th,
+.orderbook-table td {
+    padding: 12px 18px;
+    text-align: center;
+}
+
+.orderbook-table thead {
+    background: var(--secondary-color);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.orderbook-table tbody tr:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.equity-illustration,
+.bond-flow,
+.reliability-scale,
+.indices-map,
+.etf-box,
+.fan-chart,
+.pillar-diagram,
+.liquidity-card,
+.shield-card,
+.timeline-steps,
+.longterm-visual,
+.cycle-flow,
+.checklist-board {
+    width: 100%;
+    max-width: 780px;
+}
+
+.equity-illustration {
+    display: flex;
+    gap: 18px;
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.1), rgba(39, 174, 96, 0.05));
+    border-radius: 18px;
+    padding: 22px;
+    align-items: center;
+    box-shadow: 0 14px 24px rgba(39, 174, 96, 0.18);
+}
+
+.equity-illustration .company {
+    flex: 1;
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: inset 0 0 0 2px rgba(46, 204, 113, 0.3);
+    font-size: 0.8em;
+}
+
+.equity-illustration .shareholders {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    flex: 1;
+}
+
+.equity-illustration .shareholder {
+    background: rgba(46, 204, 113, 0.2);
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+    font-size: 0.75em;
+    color: var(--dark-gray);
+}
+
+.bond-flow {
+    background: linear-gradient(120deg, rgba(241, 196, 15, 0.18), rgba(243, 156, 18, 0.06));
+    border-radius: 18px;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
+    gap: 16px;
+    align-items: center;
+}
+
+.bond-flow .flow-step {
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: inset 0 0 0 2px rgba(243, 156, 18, 0.28);
+    font-size: 0.78em;
+}
+
+.bond-flow .flow-arrow {
+    font-size: 2em;
+    text-align: center;
+    color: var(--warning-color);
+}
+
+.reliability-scale {
+    background: linear-gradient(90deg, rgba(39, 174, 96, 0.2), rgba(231, 76, 60, 0.15));
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.reliability-scale .scale-bar {
+    position: relative;
+    height: 14px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.reliability-scale .scale-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, var(--success-color), var(--secondary-color));
+    width: 65%;
+}
+
+.reliability-scale .scale-markers {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75em;
+    color: var(--dark-gray);
+}
+
+.reliability-scale .scale-markers strong {
+    font-size: 0.8em;
+    color: var(--primary-color);
+}
+
+.indices-map {
+    background: linear-gradient(160deg, rgba(52, 152, 219, 0.18), rgba(155, 89, 182, 0.12));
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 16px 30px rgba(52, 152, 219, 0.22);
+}
+
+.indices-map svg {
+    width: 100%;
+    height: auto;
+}
+
+.etf-box {
+    display: grid;
+    grid-template-columns: minmax(220px, 1fr) 1fr;
+    gap: 20px;
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.18), rgba(46, 204, 113, 0.14));
+    border-radius: 20px;
+    padding: 24px;
+    align-items: center;
+}
+
+.etf-box .etf-label {
+    background: #fff;
+    border-radius: 18px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: inset 0 0 0 3px rgba(52, 152, 219, 0.28);
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.etf-box .etf-holdings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.etf-box .holding {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 14px;
+    padding: 12px;
+    text-align: center;
+    font-size: 0.75em;
+    box-shadow: 0 8px 16px rgba(44, 62, 80, 0.14);
+}
+
+.fan-chart {
+    position: relative;
+    background: var(--light-gray);
+    border-radius: 20px;
+    padding: 24px 28px 32px;
+    box-shadow: 0 16px 28px rgba(44, 62, 80, 0.2);
+}
+
+.fan-chart svg {
+    width: 100%;
+    height: auto;
+}
+
+.pillar-diagram {
+    background: linear-gradient(150deg, rgba(52, 152, 219, 0.16), rgba(46, 204, 113, 0.12));
+    border-radius: 20px;
+    padding: 26px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+    gap: 16px;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.pillar-diagram .pillar {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 18px 18px 8px 8px;
+    padding: 18px 14px;
+    box-shadow: inset 0 0 0 3px rgba(52, 152, 219, 0.24);
+    font-size: 0.75em;
+}
+
+.pillar-diagram .roof {
+    grid-column: 1 / -1;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 14px;
+    border-radius: 18px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.liquidity-card,
+.shield-card,
+.timeline-steps,
+.longterm-visual,
+.cycle-flow,
+.checklist-board {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(236, 240, 241, 0.9));
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 14px 26px rgba(44, 62, 80, 0.18);
+}
+
+.liquidity-card strong,
+.shield-card strong {
+    color: var(--secondary-color);
+    font-size: 0.85em;
+}
+
+.liquidity-card p,
+.shield-card p,
+.longterm-visual p {
+    margin: 12px 0 0;
+    font-size: 0.75em;
+    color: var(--dark-gray);
+    text-align: center;
+}
+
+.liquidity-card .icon,
+.shield-card .icon,
+.timeline-steps .icon,
+.longterm-visual .icon,
+.cycle-flow .icon,
+.checklist-board .icon {
+    font-size: 2em;
+}
+
+.timeline-steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.timeline-steps .step {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    border-radius: 14px;
+    background: rgba(52, 152, 219, 0.1);
+    font-size: 0.75em;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.longterm-visual {
+    position: relative;
+    padding-bottom: 36px;
+}
+
+.longterm-visual svg {
+    width: 100%;
+    height: auto;
+}
+
+.cycle-flow {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cycle-flow .step {
+    background: rgba(52, 152, 219, 0.14);
+    border-radius: 14px;
+    padding: 14px;
+    text-align: center;
+    font-size: 0.75em;
+    max-width: 160px;
+}
+
+.cycle-flow .arrow {
+    font-size: 1.6em;
+    color: var(--secondary-color);
+}
+
+.checklist-board {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 16px;
+    align-items: start;
+}
+
+.checklist-board ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checklist-board li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.checklist-board li::before {
+    content: "☐";
+    color: var(--secondary-color);
+    font-size: 1em;
+}
+
 /* Responsive Design - Auto-fit to viewport like PowerPoint */
 .reveal .slides section {
     /* Layout and sizing */

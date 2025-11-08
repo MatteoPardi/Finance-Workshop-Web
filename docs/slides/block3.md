@@ -13,7 +13,13 @@ Ispirata al metodo di Paolo Coletti
 - L'obiettivo è combinare **protezione** e **crescita**.
 
 <div class="visual">
-🏛️ Quattro colonne con etichette diverse sorreggono un tetto "Serenità finanziaria".
+  <div class="pillar-diagram" role="group" aria-label="Quattro pilastri della strategia">
+    <div class="roof">Serenità finanziaria</div>
+    <div class="pillar">1 · Conto corrente</div>
+    <div class="pillar">2 · Fondo emergenza</div>
+    <div class="pillar">3 · Progetti</div>
+    <div class="pillar">4 · Futuro</div>
+  </div>
 </div>
 
 ---
@@ -25,7 +31,11 @@ Ispirata al metodo di Paolo Coletti
 - Priorità: **immediata disponibilità**, non rendimento.
 
 <div class="visual">
-💧 Icona salvagente con etichetta "Liquidità immediata".
+  <div class="liquidity-card" role="group" aria-label="Conto corrente dedicato alle spese quotidiane">
+    <div class="icon">💧</div>
+    <strong>Liquidità immediata</strong>
+    <p>Copre bollette, affitto e spese mensili senza pensieri.</p>
+  </div>
 </div>
 
 ---
@@ -37,7 +47,11 @@ Ispirata al metodo di Paolo Coletti
 - Ti protegge da imprevisti seri (perdita lavoro, spese mediche).
 
 <div class="visual">
-🛡️ Scudo che protegge una famiglia da nuvole temporalesche.
+  <div class="shield-card" role="group" aria-label="Fondo emergenza che protegge dagli imprevisti">
+    <div class="icon">🛡️</div>
+    <strong>Cuscinetto di sicurezza</strong>
+    <p>Risorse sempre pronte per affrontare urgenze e spese inattese.</p>
+  </div>
 </div>
 
 ---
@@ -49,7 +63,11 @@ Ispirata al metodo di Paolo Coletti
 - Qui la regola è: **preservare il capitale**, accettando rendimenti moderati.
 
 <div class="visual">
-📆 Linea del tempo con tappe "1 anno", "5 anni", "10 anni" e icone progetto.
+  <div class="timeline-steps" role="group" aria-label="Obiettivi a breve termine">
+    <div class="step"><div class="icon">🚗</div>1 anno<br />Acquisto auto</div>
+    <div class="step"><div class="icon">🎓</div>5 anni<br />Master</div>
+    <div class="step"><div class="icon">🏠</div>10 anni<br />Caparra casa</div>
+  </div>
 </div>
 
 ---
@@ -61,7 +79,15 @@ Ispirata al metodo di Paolo Coletti
 - Accettiamo oscillazioni importanti in cambio di una crescita storicamente robusta.
 
 <div class="visual">
-🚀 Grafico lungo termine con montagne e freccia verso l'alto.
+  <div class="longterm-visual" role="img" aria-label="Grafico di crescita nel lungo periodo">
+    <div class="icon">🚀</div>
+    <svg viewBox="0 0 760 220">
+      <path d="M40 180 Q 120 140 180 150 T 320 130 T 460 80 T 620 60" fill="none" stroke="#27ae60" stroke-width="12" stroke-linecap="round" />
+      <polygon points="620,60 600,30 660,60 600,90" fill="#27ae60" opacity="0.8" />
+      <path d="M60 200 L140 150 L220 170 L300 140 L380 150 L460 110 L540 120 L620 80" fill="rgba(52, 152, 219, 0.25)" stroke="rgba(52, 152, 219, 0.4)" stroke-width="4" />
+    </svg>
+    <p>Oscillazioni nel breve, crescita nel lungo periodo.</p>
+  </div>
 </div>
 
 ---
@@ -77,7 +103,15 @@ Ispirata al metodo di Paolo Coletti
 - Una volta al mese verifica e riequilibra.
 
 <div class="visual">
-🔁 Infografica circolare con frecce che girano tra i quattro pilastri.
+  <div class="cycle-flow" role="group" aria-label="Sequenza per riempire i pilastri">
+    <div class="step">1. Conto corrente</div>
+    <div class="arrow">➡️</div>
+    <div class="step">2. Fondo emergenza</div>
+    <div class="arrow">➡️</div>
+    <div class="step">3. Progetti</div>
+    <div class="arrow">➡️</div>
+    <div class="step">4. Futuro</div>
+  </div>
 </div>
 
 ---
@@ -90,5 +124,13 @@ Ispirata al metodo di Paolo Coletti
 - [ ] Hai scelto un ETF per il lungo termine?
 
 <div class="visual">
-✅ Lista su clipboard con icone corrispondenti.
+  <div class="checklist-board" role="group" aria-label="Checklist finale del modulo">
+    <div class="icon">✅</div>
+    <ul>
+      <li>Spese mensili annotate</li>
+      <li>Fondo emergenza dimensionato</li>
+      <li>Investimenti per obiettivi 1–10 anni</li>
+      <li>ETF scelto per il lungo termine</li>
+    </ul>
+  </div>
 </div>
