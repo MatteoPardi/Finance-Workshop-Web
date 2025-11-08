@@ -46,11 +46,19 @@ const REVEAL_CONFIG = {
     margin: 0.05,
     
     // Optimized scaling bounds for 16:9 format
-    minScale: 0.3,
+    // Allow scaling down to fit smaller screens while maintaining aspect ratio
+    minScale: 0.1,
     maxScale: 2.0,
+    
+    // Center slides vertically
+    center: true,
     
     // Enable responsive slide sizing
     embedded: false,
+    
+    // Auto-fit slides to viewport (like PowerPoint)
+    // This ensures content is always visible regardless of screen size
+    autoAnimate: true,
     
     // Automatically animate matching elements
     autoAnimateEasing: 'ease',
