@@ -66,7 +66,25 @@ Investire significa **spostare denaro dal conto** per acquistare qualcosa che pu
 - L'obiettivo è **rivenderlo più avanti** a un prezzo maggiore.
 
 <div class="visual">
-🪙 Disegno: timeline con "Oggi compro" → "Tra qualche anno vendo" e freccia crescente.
+<div class="visual-wrapper invest-timeline">
+  <div class="invest-step">
+    <div class="icon">💡</div>
+    <strong>1 · Pianifico</strong>
+    <p>Definisco l'obiettivo e metto da parte il capitale da investire.</p>
+  </div>
+  <div class="invest-arrow"></div>
+  <div class="invest-step">
+    <div class="icon">🛒</div>
+    <strong>2 · Investo</strong>
+    <p>Acquisto l'asset scegliendo strumenti coerenti con l'orizzonte.</p>
+  </div>
+  <div class="invest-arrow"></div>
+  <div class="invest-step">
+    <div class="icon">📈</div>
+    <strong>3 · Lascio crescere</strong>
+    <p>Il tempo e l'interesse composto fanno aumentare il valore prima della vendita.</p>
+  </div>
+</div>
 </div>
 
 ---
@@ -80,7 +98,34 @@ Non tutti gli investimenti si comportano allo stesso modo.
 - Alcuni sono quasi piatti e prevedibili (es. BOT a breve).
 
 <div class="visual">
-📊 Collage di tre mini-grafici: caos, trend crescente, linea piatta.
+<div class="visual-wrapper behavior-collage">
+  <div class="mini-chart">
+    <svg viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="4" y="4" width="152" height="92" rx="14" fill="rgba(52,152,219,0.08)" />
+      <polyline points="8,80 28,30 48,70 68,20 88,65 108,25 128,60 148,15" fill="none" stroke="#e74c3c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+    <span>Caos totale</span>
+    <p>Movimenti imprevedibili: serve speculare, non pianificare.</p>
+  </div>
+  <div class="mini-chart">
+    <svg viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="4" y="4" width="152" height="92" rx="14" fill="rgba(46,204,113,0.1)" />
+      <polyline points="8,88 38,78 68,70 98,58 128,40 152,22" fill="none" stroke="#27ae60" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <line x1="30" y1="72" x2="144" y2="28" stroke="rgba(39,174,96,0.35)" stroke-width="6" stroke-linecap="round" />
+    </svg>
+    <span>Trend regolare</span>
+    <p>Onde e volatilità ma direzione crescente: perfetto per investire.</p>
+  </div>
+  <div class="mini-chart">
+    <svg viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="4" y="4" width="152" height="92" rx="14" fill="rgba(149,165,166,0.12)" />
+      <polyline points="8,56 40,54 72,55 104,53 136,54 152,55" fill="none" stroke="#7f8c8d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <rect x="16" y="46" width="128" height="18" fill="rgba(127,140,141,0.18)" />
+    </svg>
+    <span>Quasi piatto</span>
+    <p>Oscillazioni minime: utile per conservare capitale nel breve.</p>
+  </div>
+</div>
 </div>
 
 ---
@@ -108,7 +153,20 @@ Non tutti gli investimenti si comportano allo stesso modo.
 - Se la risposta è no → è speculazione, non adatta a una strategia passiva.
 
 <div class="visual">
-🧭 Diagramma decisionale: "Comportamento regolare?" → Sì: Procedi | No: Lascia perdere.
+<div class="visual-wrapper decision-flow">
+  <div class="flow-question">Comportamento regolare e modellabile?</div>
+  <div class="flow-options">
+    <div class="flow-option good">
+      <strong>Sì → Procedi</strong>
+      <p>Stima media e volatilità, costruisci un piano e applica disciplina.</p>
+    </div>
+    <div class="flow-option bad">
+      <strong>No → Evita</strong>
+      <p>Senza statistica affidabile rimane speculazione: troppo stress per un investitore passivo.</p>
+    </div>
+  </div>
+  <div class="flow-note">Se non riesci a spiegarne il comportamento con i dati, non inserirlo nella strategia.</div>
+</div>
 </div>
 
 ---
@@ -126,7 +184,20 @@ Non tutti gli investimenti si comportano allo stesso modo.
 </div>
 
 <div class="visual">
-📈 Istogramma stilizzato dei rendimenti mensili con curva a campana sovrapposta.
+<div class="visual-wrapper stats-duo">
+  <div class="stat-card">
+    <div class="stat-icon">📊</div>
+    <strong>Media</strong>
+    <div class="stat-value">Rendimento "tipico" dell'anno.</div>
+    <p>È il faro per capire cosa aspettarsi nel lungo periodo.</p>
+  </div>
+  <div class="stat-card">
+    <div class="stat-icon">🌊</div>
+    <strong>Volatilità</strong>
+    <div class="stat-value">Ampiezza delle onde lungo il viaggio.</div>
+    <p>Più è alta, più devi tollerare saliscendi prima di vedere risultati.</p>
+  </div>
+</div>
 </div>
 
 ---
@@ -141,5 +212,26 @@ Non tutti gli investimenti si comportano allo stesso modo.
 | Bassa | Bassa | Ideale per obiettivi vicini |
 
 <div class="visual">
-🎯 Quadrante 2×2 con icone: "Serenità" vs "Adrenalina".
+<div class="visual-wrapper evaluation-quadrant">
+  <div class="quadrant-cell">
+    <strong>Guadagno alto · Volatilità bassa</strong>
+    <div class="mood">Il sogno (quasi inesistente)</div>
+    <p>Situazione rara: se lo trovi chiediti cosa non stai vedendo.</p>
+  </div>
+  <div class="quadrant-cell">
+    <strong>Guadagno basso · Volatilità alta</strong>
+    <div class="mood warning">Campanello d'allarme</div>
+    <p>Rischio senza ricompensa: cerca alternative più equilibrate.</p>
+  </div>
+  <div class="quadrant-cell">
+    <strong>Guadagno alto · Volatilità alta</strong>
+    <div class="mood">Ok per obiettivi lontani</div>
+    <p>Serve tempo per far giocare l'interesse composto.</p>
+  </div>
+  <div class="quadrant-cell">
+    <strong>Guadagno basso · Volatilità bassa</strong>
+    <div class="mood">Ideale per il breve</div>
+    <p>Perfetto per obiettivi vicini dove conta preservare il capitale.</p>
+  </div>
+</div>
 </div>

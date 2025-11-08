@@ -13,7 +13,12 @@ Ispirata al metodo di Paolo Coletti
 - L'obiettivo è combinare **protezione** e **crescita**.
 
 <div class="visual">
-🏛️ Quattro colonne con etichette diverse sorreggono un tetto "Serenità finanziaria".
+<div class="visual-wrapper pillars-diagram">
+  <div class="pillar">💧<br><strong>Conto corrente</strong><br>Vita quotidiana</div>
+  <div class="pillar">🛡️<br><strong>Fondo emergenza</strong><br>Imprevisti seri</div>
+  <div class="pillar">🎯<br><strong>Progetti 1-10 anni</strong><br>Capitale da proteggere</div>
+  <div class="pillar">🚀<br><strong>Lungo termine</strong><br>Crescita e pensione</div>
+</div>
 </div>
 
 ---
@@ -25,7 +30,14 @@ Ispirata al metodo di Paolo Coletti
 - Priorità: **immediata disponibilità**, non rendimento.
 
 <div class="visual">
-💧 Icona salvagente con etichetta "Liquidità immediata".
+<div class="visual-wrapper pillar-focus">
+  <div class="pillar-icon">💧</div>
+  <div class="pillar-summary">
+    <strong>Focus</strong>: disponibilità immediata.
+    <br/>Strumenti: conto corrente, carta di debito.
+    <br/>Parola chiave: zero stress.
+  </div>
+</div>
 </div>
 
 ---
@@ -37,7 +49,14 @@ Ispirata al metodo di Paolo Coletti
 - Ti protegge da imprevisti seri (perdita lavoro, spese mediche).
 
 <div class="visual">
-🛡️ Scudo che protegge una famiglia da nuvole temporalesche.
+<div class="visual-wrapper pillar-focus">
+  <div class="pillar-icon">🛡️</div>
+  <div class="pillar-summary">
+    <strong>Focus</strong>: protezione dagli shock.
+    <br/>Strumenti: conti deposito garantiti, BTP a breve.
+    <br/>Parola chiave: resilienza.
+  </div>
+</div>
 </div>
 
 ---
@@ -49,7 +68,14 @@ Ispirata al metodo di Paolo Coletti
 - Qui la regola è: **preservare il capitale**, accettando rendimenti moderati.
 
 <div class="visual">
-📆 Linea del tempo con tappe "1 anno", "5 anni", "10 anni" e icone progetto.
+<div class="visual-wrapper pillar-focus">
+  <div class="pillar-icon">📆</div>
+  <div class="pillar-summary">
+    <strong>Focus</strong>: realizzare sogni vicini.
+    <br/>Strumenti: obbligazioni investment grade, fondi a bassa volatilità.
+    <br/>Parola chiave: prudenza.
+  </div>
+</div>
 </div>
 
 ---
@@ -61,7 +87,14 @@ Ispirata al metodo di Paolo Coletti
 - Accettiamo oscillazioni importanti in cambio di una crescita storicamente robusta.
 
 <div class="visual">
-🚀 Grafico lungo termine con montagne e freccia verso l'alto.
+<div class="visual-wrapper pillar-focus">
+  <div class="pillar-icon">🚀</div>
+  <div class="pillar-summary">
+    <strong>Focus</strong>: crescita e ricchezza futura.
+    <br/>Strumenti: ETF azionari globali, PAC disciplinato.
+    <br/>Parola chiave: tempo.
+  </div>
+</div>
 </div>
 
 ---
@@ -77,7 +110,12 @@ Ispirata al metodo di Paolo Coletti
 - Una volta al mese verifica e riequilibra.
 
 <div class="visual">
-🔁 Infografica circolare con frecce che girano tra i quattro pilastri.
+<div class="visual-wrapper pillars-flow">
+  <div class="flow-step">1 · Liquida il conto corrente</div>
+  <div class="flow-step">2 · Costruisci il fondo emergenza</div>
+  <div class="flow-step">3 · Pianifica i progetti</div>
+  <div class="flow-step">4 · Alimenta il lungo termine</div>
+</div>
 </div>
 
 ---
@@ -90,5 +128,10 @@ Ispirata al metodo di Paolo Coletti
 - [ ] Hai scelto un ETF per il lungo termine?
 
 <div class="visual">
-✅ Lista su clipboard con icone corrispondenti.
+<div class="visual-wrapper checklist-board">
+  <div class="item">Stima delle spese mensili aggiornata</div>
+  <div class="item">Fondo emergenza dimensionato</div>
+  <div class="item">Strategia per obiettivi 1-10 anni</div>
+  <div class="item">ETF scelto e pronto per il PAC</div>
+</div>
 </div>
