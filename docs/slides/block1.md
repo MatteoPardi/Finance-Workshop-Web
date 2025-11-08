@@ -43,7 +43,7 @@ Dopo aver impostato la strategia, serve **~10 minuti al mese**.
 ### 📈 Da un lato è **tanto**
 L'**effetto dell'interesse composto** → raddoppio ogni ~15 anni
 
-*Mostrare grafico crescita esponenziale*
+<div data-interactive="exponential-growth" class="exponential-growth-wrapper"></div>
 
 </div>
 

@@ -101,6 +101,12 @@ class FinanceDeck {
         
         // Handle any fragment-specific animations or logic
         this.handleFragmentAnimation(event.fragment, 'show');
+        
+        // Initialize interactive components within the fragment
+        const interactiveElements = event.fragment.querySelectorAll('[data-interactive]');
+        interactiveElements.forEach(element => {
+            this.initializeInteractiveElement(element);
+        });
     }
 
     /**
@@ -182,6 +188,9 @@ class FinanceDeck {
             case 'quiz':
                 this.initializeQuiz(element);
                 break;
+            case 'exponential-growth':
+                this.initializeExponentialGrowthChart(element);
+                break;
             default:
                 console.log(`Unknown interactive type: ${interactiveType}`);
         }
@@ -201,6 +210,24 @@ class FinanceDeck {
     initializeQuiz(element) {
         // Placeholder for quiz initialization
         console.log('Quiz component ready');
+    }
+
+    /**
+     * Initialize exponential growth chart component
+     */
+    initializeExponentialGrowthChart(element) {
+        // Check if component is already initialized
+        if (element.expGrowthChart) {
+            return;
+        }
+        
+        // Initialize the chart component
+        if (window.ExponentialGrowthChart) {
+            element.expGrowthChart = new window.ExponentialGrowthChart(element);
+            console.log('Exponential growth chart initialized');
+        } else {
+            console.error('ExponentialGrowthChart class not found. Make sure exponential-growth-chart.js is loaded.');
+        }
     }
 
     /**
@@ -245,35 +272,15 @@ class FinanceDeck {
     }
 
     /**
-     * Handle content overflow with elegant solutions
+     * Handle content overflow - Reveal.js handles scaling automatically
+     * This method is kept for potential future customizations
      */
     handleContentOverflow(slide) {
         if (!slide) return;
-
-        // Reset overflow classes
-        slide.classList.remove('content-overflow', 'content-overflow-small', 'has-overflow');
-
-        // Wait for next frame to ensure DOM is rendered
-        requestAnimationFrame(() => {
-            const slideHeight = slide.offsetHeight;
-            const viewportHeight = window.innerHeight;
-            const contentHeight = slide.scrollHeight;
-
-            // Check if content overflows
-            if (contentHeight > slideHeight * 0.95) {
-                console.log('Content overflow detected');
-                
-                // Try different scaling levels
-                if (contentHeight > slideHeight * 1.2) {
-                    slide.classList.add('content-overflow-small');
-                } else {
-                    slide.classList.add('content-overflow');
-                }
-                
-                // Add overflow indicator
-                slide.classList.add('has-overflow');
-            }
-        });
+        
+        // Reveal.js automatically scales slides to fit the viewport
+        // We just need to ensure the layout is recalculated on resize
+        // The scaling is handled by Reveal.js based on minScale/maxScale config
     }
 
 
@@ -311,12 +318,18 @@ class FinanceDeck {
     }
 
     /**
-     * Handle window resize
+     * Handle window resize - ensure slides adapt to new viewport size
      */
     handleResize() {
         if (this.deck) {
-            // Let Reveal.js handle the resize
+            // Let Reveal.js handle the resize and recalculate scaling
+            // This ensures slides always fit the viewport (like PowerPoint)
             this.deck.layout();
+            
+            // Force a layout recalculation to ensure proper scaling
+            requestAnimationFrame(() => {
+                this.deck.layout();
+            });
         }
     }
 
